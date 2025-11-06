@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dai Phan Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font Awesome (bạn đang dùng 7.0.1; nếu icon không lên, thử 6.x free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Dai Phan</span>
+        </a>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="content">
+            <h1>Dai Phan</h1>
+            <h2>Intern <span class="typing-text">Java Developer</span></h2>
+            <p>
+                Hi, I'm Dai Phan. Currently, I am a fouth-year university student at UIT - University of Information and
+                Technology.<br>
+                <br>
+                Basically, I'm searching for an Intern Java Dev position. If you're interested, scroll down to have a
+                nice look about me.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>View Projects
+                </a>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i>Contact Me
+                </a>
+                <a class="btn btn-primary" href="#downloadCV">
+                    <i class="fa-solid fa-file-pdf"></i>Download CV
+                </a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="border-outer"></div>
+            <div class="border-middle"></div>
+            <div class="border-inner"></div>
+            <div class="border-container"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <img src="asset/profile.png" alt="Profile Picture" class="profile-img" />
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="asset/profile.png" alt="about-img" />
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a <span>Java Developer</span></h3>
+            <p>
+                I aim to be proficient in programming in the backend with Spring Boot and
+                NodeJS, WebSocket communication, and front-end development with React.
+                I also focused on deploying software products using CI/CD, Docker and
+                Kubernetes too. Currently, I hope that I can join a dynamic company,
+                where I will continuously learning and adopting new and cutting-edge
+                technologies to enhance my skill set and become an official team
+                member.
+            </p>
+            <button id="aboutToggle" class="btn btn-secondary" aria-expanded="false" aria-controls="about-extra">
+                <i class="fa-solid fa-angles-down" aria-hidden="true"></i>
+                <span class="btn-label">Read More</span>
+            </button>
+
+            <div id="about-extra" class="about-extra" hidden>
+                <div class="edu-grid">
+                    <article class="edu-item">
+                        <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <div class="edu-meta">
+                            <h4>University</h4>
+                            <p>UIT — University of Information Technology (VNU-HCM)</p>
+                        </div>
+                    </article>
+
+                    <article class="edu-item">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-meta">
+                            <h4>Major</h4>
+                            <p>Software Engineering</p>
+                        </div>
+                    </article>
+
+                    <article class="edu-item">
+                        <div class="edu-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="edu-meta">
+                            <h4>GPA</h4>
+                            <p>3.2 / 4.0</p>
+                        </div>
+                    </article>
+
+                    <article class="edu-item">
+                        <div class="edu-icon"><i class="fa-solid fa-language"></i></div>
+                        <div class="edu-meta">
+                            <h4>TOEIC</h4>
+                            <p>780 (L+R)</p>
+                            <p>250 (S+W)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects: Vocalearn -->
+    <section class="project project-vocalearn" id="projects">
+        <h2 class="heading">Vocalearn <span>Project</span></h2>
+
+        <div class="project-wrap">
+            <div class="project-copy">
+                <p class="kicker">TOEIC practice & vocabulary platform</p>
+
+                <p class="lead">
+                    A modern learning platform with timed TOEIC exams, review mode and
+                    smart Flashcard. Built for speed, clarity, and real-world usage.
+                </p>
+
+                <ul class="feature-list">
+                    <li>
+                        <i class="fa-solid fa-check"></i> Practice Toeic Exam (Part 1–7), timer
+                        & autosave
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> Learn Flashcard with Spaced Repetition method.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> Smart generate new Word using AI support.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> Friendly using and studying for all people.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check"></i> Admin dashboard, JWT auth,
+                        role-based access, Docker engine.
+                    </li>
+                </ul>
+
+                <div class="tech-stack">
+                    <span class="chip">React + Ant</span>
+                    <span class="chip">Spring Boot</span>
+                    <span class="chip">MinIO</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Redis</span>
+                    <span class="chip">Docker</span>
+                </div>
+
+                <div class="project-cta">
+                    <a href="#" class="btn btn-primary">View Demo</a>
+                    <a href="https://github.com/PhanVanDiej/BE-VocaLearn-website" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-secondary">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-visual">
+                <div class="mockup show-controls" id="yt-mockup">
+                    <!-- YouTube player -->
+                    <div class="yt-container">
+                        <!-- Dùng youtube-nocookie để tăng privacy -->
+                        <iframe id="yt-player"
+                            src="https://www.youtube-nocookie.com/embed/GNVQqVi2lJw?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&controls=1"
+                            title="Project Demo" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+
+                    <!-- Nút giữa: Play/Pause -->
+                    <button class="vid-btn center-toggle" id="yt-center" aria-label="Play/Pause">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <!-- Nút góc: Expand/Compress -->
+                    <button class="vid-btn expand-toggle" id="yt-expand" aria-label="Expand video">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+                <div class="glow"></div>
+            </div>
+
+            <!-- backdrop modal (tái sử dụng CSS hiện có) -->
+            <div class="video-backdrop" id="yt-backdrop"></div>
+
+        </div>
+    </section>
+
+    <!-- ===================== Experience ===================== -->
+    <section class="experience" id="experience">
+        <h2 class="heading">Globee - Salesforce & Ecommerce</h2>
+
+        <!-- Top: 2 photos side-by-side -->
+        <div class="exp-hero">
+            <figure class="exp-photo">
+                <img src="asset/exp1.jpg" alt="At previous company — team desk" />
+                <figcaption><i class="fa-solid fa-camera-retro"></i> Team desk — 2025</figcaption>
+            </figure>
+
+            <figure class="exp-photo">
+                <img src="asset/exp2.jpg" alt="At previous company — onboarding & training" />
+                <figcaption><i class="fa-solid fa-id-badge"></i> Onboarding & training</figcaption>
+            </figure>
+        </div>
+
+        <!-- Middle: short description (inside details) -->
+        <details class="exp-summary">
+            <summary>
+                <i class="fa-solid fa-angle-down"></i>
+                Internship overview<b> 21/07/2025 - 21/10/2025</b>
+            </summary>
+            <div class="exp-summary-body">
+                <p>
+                    Thực tập sinh phụ trách cấu hình & phát triển cho D2C Commerce: thiết lập trang record với
+                    <b>Dynamic Forms</b> & <b>Highlights Panel</b>, tối ưu hỗ trợ di động, cấu hình flows cơ bản và
+                    triển khai <b>AI features</b> (Prompt Builder, Work Summary) cho quy trình tác nghiệp.<br>
+                    Thiết lập dự án mẫu: <b>Commerce Store Website</b> - Cấu hình phân quyền, import dữ liệu sản phẩm,
+                    price list và tax calculation.
+
+                    Song song, mình đóng góp tài liệu handover, checklist QA và demo nội bộ.
+                </p>
+            </div>
+        </details>
+
+        <!-- Bottom: horizontal cards row (tech + work) -->
+        <div class="exp-cards neon" aria-label="Technologies and responsibilities">
+            <!-- Card 1 -->
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fa-brands fa-salesforce"></i></div>
+                <h3 class="exp-card-title">Platform</h3>
+                <ul class="exp-points">
+                    <li>D2C Commerce setup</li>
+                    <li>Dynamic Forms / Record pages</li>
+                    <li>Highlights Panel / Mobile</li>
+                </ul>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <h3 class="exp-card-title">Config & Data</h3>
+                <ul class="exp-points">
+                    <li>Data model & roles</li>
+                    <li>Validation & flows</li>
+                    <li>Page layouts & tabs</li>
+                </ul>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3 class="exp-card-title">AI & Productivity</h3>
+                <ul class="exp-points">
+                    <li>Prompt Builder basics</li>
+                    <li>Work Summary pilot</li>
+                    <li>Notes → actions</li>
+                </ul>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fa-solid fa-gears"></i></div>
+                <h3 class="exp-card-title">Dev Process</h3>
+                <ul class="exp-points">
+                    <li>Git workflow</li>
+                    <li>Change sets</li>
+                    <li>Test & QA checklist</li>
+                </ul>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="exp-card">
+                <div class="exp-icon"><i class="fa-solid fa-file-lines"></i></div>
+                <h3 class="exp-card-title">Docs & Handover</h3>
+                <ul class="exp-points">
+                    <li>Setup guide</li>
+                    <li>Release notes</li>
+                    <li>Demo scripts</li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- Actions -->
+        <div class="exp-actions">
+            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact me</a>
+            <a class="btn btn-primary" href="asset/internship-certificate.pdf" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Certificate
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-tabs" role="tablist" aria-label="Skill categories">
+            <button class="skills-tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="skills-tab" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+            <button class="skills-tab" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+            <button class="skills-tab" data-filter="devops" role="tab" aria-selected="false">DevOps</button>
+            <button class="skills-tab" data-filter="ai" role="tab" aria-selected="false">AI / ML</button>
+        </div>
+
+
+
+        <div class="skills-columns">
+            <div class="skills-col" data-group="frontend">
+                <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+                <div class="bar" data-percent="85">
+                    <span>React / Vite</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>85%</em>
+                </div>
+                <div class="bar" data-percent="78">
+                    <span>TypeScript / JavaScript</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>78%</em>
+                </div>
+                <div class="bar" data-percent="72">
+                    <span>MUI / Tailwind</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>72%</em>
+                </div>
+            </div>
+
+            <div class="skills-col" data-group="backend">
+                <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                <div class="bar" data-percent="82">
+                    <span>Spring Boot (REST, JPA)</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>82%</em>
+                </div>
+                <div class="bar" data-percent="76">
+                    <span>Node.js (Express)</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>76%</em>
+                </div>
+                <div class="bar" data-percent="74">
+                    <span>WebSocket / STOMP</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>74%</em>
+                </div>
+                <div class="bar" data-percent="72">
+                    <span>MySQL / Redis</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>72%</em>
+                </div>
+                <div class="bar" data-percent="70">
+                    <span>MinIO / DigitalOcean Spaces</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>70%</em>
+                </div>
+            </div>
+
+            <div class="skills-col" data-group="devops">
+                <h3><i class="fa-solid fa-gears"></i> DevOps</h3>
+                <div class="bar" data-percent="68">
+                    <span>Docker / Docker Compose</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>68%</em>
+                </div>
+                <div class="bar" data-percent="60">
+                    <span>CI/CD (GitHub Actions)</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>60%</em>
+                </div>
+                <div class="bar" data-percent="58">
+                    <span>Nginx / VPS (Ubuntu)</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>58%</em>
+                </div>
+            </div>
+
+            <div class="skills-col" data-group="ai">
+                <h3><i class="fa-solid fa-robot"></i> AI / ML</h3>
+                <div class="bar" data-percent="80">
+                    <span>Prompt Builder</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>80%</em>
+                </div>
+                <div class="bar" data-percent="78">
+                    <span></span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>78%</em>
+                </div>
+                <div class="bar" data-percent="68">
+                    <span>OpenCv</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>68%</em>
+                </div>
+                <div class="bar" data-percent="62">
+                    <span>CUDA Basics</span>
+                    <div class="bar-track">
+                        <div class="bar-fill"></div>
+                    </div><em>62%</em>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="skills-chips">
+            <span class="chip" title="State & data fetching">React Query</span>
+            <span class="chip" title="Data viz">ApexCharts</span>
+            <span class="chip" title="Auth & JWT">Spring Security</span>
+            <span class="chip" title="Object Storage">MinIO</span>
+            <span class="chip" title="Caching">Redis</span>
+            <span class="chip" title="Realtime">STOMP</span>
+            <span class="chip" title="Infra">Nginx</span>
+            <span class="chip" title="CI/CD">GitHub Actions</span>
+            <span class="chip" title="Scripting">Python</span>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-wrap">
+            <!-- Form -->
+            <form id="contactForm" class="contact-card" novalidate>
+                <div class="form-row two">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">Your email</label>
+                        <input id="email" name="email" type="email" inputmode="email" placeholder="you@mail.com"
+                            required />
+                    </div>
+                </div>
+
+                <div class="form-row two">
+                    <div class="field">
+                        <label for="company">Company (optional)</label>
+                        <input id="company" name="company" type="text" placeholder="Your company" />
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" placeholder="Internship opportunity" required />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">
+                        Message
+                        <small class="count"><span id="msgCount">0</span>/1000</small>
+                    </label>
+                    <textarea id="message" name="message" rows="6" maxlength="1000"
+                        placeholder="Tell me about the role, stack, timeline…" required></textarea>
+                </div>
+
+                <!-- Honeypot (anti-bot) -->
+                <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+
+                <div class="actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                    <a type="button" id="openMail" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Open Mail app
+                    </a>
+                </div>
+
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+
+            <!-- Side info -->
+            <aside class="contact-side">
+                <div class="contact-side-card">
+                    <p class="hint">Prefer direct email?</p>
+                    <div class="email-line">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span data-email>vandaihk17@gmail.com</span>
+                        <button class="chip" type="button" data-copy-email>Copy</button>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- ===================== Footer ===================== -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-wrap">
+                <div class="f-brand">
+                    <a href="#home" class="f-logo">
+                        <i class="fas fa-code"></i>
+                        <span>Dai Phan</span>
+                    </a>
+                    <p class="f-tag">Full-stack & AI intern — building useful things with care.</p>
+                </div>
+
+                <nav class="f-nav" aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="f-social">
+                    <a href="https://github.com/PhanVanDiej" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daiphan24092004/" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ne.dai.52/" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:your@email.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Dai Phan. All rights reserved.</p>
+                <p class="f-credits">Built with <i class="fa-solid fa-code"></i> & <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
